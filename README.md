@@ -8,7 +8,7 @@ _Note: This is a sample project._
 
 ## Endpoints  
 
-### GET /hashtag/_input_
+### GET /hashtag/ _input_
 
 Get tweets by hashtag.
 
@@ -23,3 +23,38 @@ Parameter| Type | Value
 Information| Format | Value
 --- | --- | ---
 Tweets | HTML | Most recent few tweets containing the hashtag.
+
+### GET /keyword/ _input_
+
+Get tweets by keyword.
+
+**Request Parameters:**  
+
+Parameter| Type | Value
+--- | --- | ---
+`input`| string | keyword to search for in tweets
+
+**Return information:**  
+
+Information| Format | Value
+--- | --- | ---
+Tweets | HTML | Most recent few tweets containing the keyword.
+
+### GET /geo/ _input_
+
+Get tweets by location.
+
+**Request Parameters:**  
+
+Parameter| Type | Value
+--- | --- | ---
+`long`| float | longitude
+`lat`| float | latitude
+`radius`| float | radius to search within
+
+
+**Return information:**  
+
+Information| Format | Value
+--- | --- | ---
+Tweets | HTML | Most recent few tweets within radius
