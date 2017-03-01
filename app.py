@@ -7,8 +7,8 @@ import json
 
 app = Flask(__name__)
 
-consumerKey = "P66GTF3aYSQQYdQRg56N3H9Ms"
-consumerSecret = "TSiTIh64f8XVcS1WoE59uZ3dTvQ2qkaPnTjQwIfW6IwrnybOmg"
+consumerKey = ""
+consumerSecret = ""
 keySecret = consumerKey+":"+consumerSecret
 encoded = base64.b64encode(keySecret)
 authUrl = 'https://api.twitter.com/oauth2/token'
